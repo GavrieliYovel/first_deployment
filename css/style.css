@@ -7,6 +7,31 @@ p{
     margin-bottom: 0;
 }
 
+#personImg {
+    clip-path: circle();
+    height: 50%;
+    width: 90px;
+    height: 70px;
+}
+
+#person {
+    display: flex;
+    justify-content: flex-end;
+    width: 75%;
+}
+
+#person i {
+    margin-right: 10px;
+}
+
+#person h5 {
+    margin: 0px;
+}
+
+#logo {
+    filter: brightness(0) invert(1);
+}
+
 /*----------------Welcome Page-----------------------*/
 
 #welcomePage {
@@ -15,7 +40,7 @@ p{
 
 
 .container-fluid {
-    background-color: darkgray;
+    background-color: #212529;
     
 }
 .navbar { 
@@ -26,9 +51,12 @@ p{
     height: 85vh;
 }
 
-.btn {
-    border-radius: 999px;
+.btn-lg {
     margin: 25px 25px 0px 0px;
+}
+
+.btn { 
+    border-radius: 999px;
 }
 
 .active {
@@ -198,5 +226,32 @@ ul.breadcrumbs {
   }
 
 
-/*----------------Main Object Page-----------------------*/
+/*----------------Drone List Page-----------------------*/
 
+
+#droneList {
+    background-color:gray;
+}
+
+#listWrapper {
+    margin: 75px 0px 0px 75px;
+    width: 75%;
+}
+
+.imgStyle {
+    margin-right: 25px;
+}
+
+.tableStyle {
+    width: 100%;
+}
+
+.tableStyle th { 
+    width: 20%;
+}
+
+
+
+.droneObject {
+    width: 100%;
+}
