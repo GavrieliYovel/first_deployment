@@ -1,0 +1,30 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#welcomePage {
+    background-color: gray;
+}
+
+
+.container-fluid {
+    background-color: darkgray;
+    
+}
+.navbar { 
+    padding: 0px;
+}
+
+.container {
+    height: 85vh;
+}
+
+.btn {
+    border-radius: 999px;
+    margin: 25px 25px 0px 0px;
+}
+
+.active {
+    font-weight: bold;
+}
