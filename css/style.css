@@ -1,7 +1,13 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-size: clamp(5px, 3vw, 18px)
 }
+p{
+    margin-bottom: 0;
+}
+
+/*----------------Welcome Page-----------------------*/
 
 #welcomePage {
     background-color: gray;
@@ -28,3 +34,166 @@
 .active {
     font-weight: bold;
 }
+
+/*----------------Main Object Page-----------------------*/
+
+#mainObject {
+    background-color: gray;
+}
+
+ul.breadcrumbs {
+    padding: 10px 16px;
+    list-style: none;
+  }
+  
+
+  ul.breadcrumbs li {
+    display: inline;
+    font-size: 18px;
+  }
+  ul.breadcrumbs li a {
+    text-decoration: none;
+    color: black;
+
+ 
+  }
+
+
+  ul.breadcrumbs li a:hover {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  .bi-caret-right::before{
+      vertical-align: text-bottom;
+      position: relative;
+      bottom: 2px ;
+      padding-right: 5px;
+      opacity: 50%;
+
+  }
+
+  #mainObjContent{
+      margin: auto 5% ;
+      margin-top: 1%;
+
+  }
+.mapouter{
+    
+    float: right;
+}
+  #missionProperties{
+    width: 25%;
+    margin-top: 3%;
+  }
+  #missSet{
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+      margin-top: 5%;
+      width: 50%;
+      padding: 20px;
+  }
+
+
+  .bi-pencil-fill::before {
+      position: relative;
+    color: white;
+    left:5px;
+    top:-2px;
+}
+
+#missonSetTbl{
+    width: 100%;
+}
+.grayBtn{
+    position: relative;
+    float: right;
+    background-color: gray;
+    border-radius: 20%;
+    height: 30px;
+    width: 30px;
+}
+.pan-tool-icon-1 {
+	width: 83px;
+	height: 83px;
+	background: #000000;
+}
+
+#stpMisBtn{
+    position: relative;
+    float: right;
+    bottom: 30px;
+    right: 30px;
+    background-color: rgb(160, 18, 18);
+    border: none;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    font-weight: bold;
+
+    border-radius: 10px;
+
+}
+#stpMisBtn img{
+    margin-right: 10px;
+    position: relative;
+    bottom: 3px;
+}
+
+#vioDet
+{
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    margin-top: 5%;
+    width: 100%;
+    padding: 20px;
+  }
+.signIcn{
+    width:auto;
+    height:auto;
+    max-width: 35px;
+    max-height: 35px;
+}
+  .vio{
+      display: flex;
+      border-bottom: 1px solid rgb(91, 91, 91) ;
+      align-items: flex-end;
+    
+  }
+  .vioDet{
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      width:80%;
+      margin-left: 20px;
+      align-items: flex-end;
+
+  }
+  .vioBtns{
+      position: relative;
+      right: -70px;
+  }
+  .vioBtns button{
+      margin: 5px 5px 5px 5px;
+  }
+
+  [class^="bi-"]::before, [class*=" bi-"]::before{
+      position: relative;
+      bottom: 3px;
+      color:white;
+  }
+  .grayBtnImg{
+      position: relative;
+    width:auto;
+    height:auto;
+    max-width: 25px;
+    max-height: 25px;
+    bottom: 3px;
+    left: -1px;
+  }
+  .vioDetTbl{
+      width:100%;
+  }
+  .vioDetTbl tr > td{
+        width:33.33%;
+  }
+

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+
+
+    <title>Flycop</title>
+  </head>
+  <body id="mainObject">
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="images/logo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">List of Drones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Main Object</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+        <!-- breadcrumbs -->
+      <ul class="breadcrumbs">
+        <li><i class="bi bi-caret-right"></i></i><a href="#">Home Screen</a></li>
+        <li><i class="bi bi-caret-right"></i></i><a href="#">Active Drones</a></li>
+        <li><i class="bi bi-caret-right"></i></i><a href="#">Drone #235</a></li>
+      </ul>
+    </main>
+
+    <div id="mainObjContent">
+        <h1>Drone #235</h1>
+        <table id="missionProperties">
+            <tr>
+                <th>Mission:</th>
+                <td>Patrol</td>
+                <th>Start Time:</th>
+                <td>9:30</td>
+            </tr>
+            <tr>
+                <th>Set by:</th>
+                <td>Haim</td>
+                <th>End time:</th>
+                <td>12:20</td>
+            </tr>
+        </table>
+<!-- Mission Settings -->
+        <section id="missSet">
+            <buttom class = "grayBtn"><i class="bi bi-pencil-fill"></i></buttom>
+             <h2>Mission Settings</h2>
+           
+            <table id="missonSetTbl">
+                <tr>
+                    <th>Duration:</th>
+                    <td> 2:50 hr</td>
+                    <th>Flight mode:</th>
+                    <td>Patrol</td>
+                </tr>
+                <tr>
+                    <th>Avg. Altitude</th>
+                    <td>5.2 m</td>
+                </tr>
+                <tr>
+                    <th>Max. Distance</th>
+                    <td> 500 m</td>
+                </tr>
+            </table> 
+            <button id="stpMisBtn"> <img src="images/stopIcn.png"> Stop Misision</button>
+        </section>
+            <!-- Violations Detected -->
+        <section id="vioDet">
+            <h2>Violations Detected:</h2>
+            <article class="vio">
+                <img  src="images/signYel.png" class ="signIcn">
+                <div class ="vioDet">
+
+                    <table class="vioDetTbl">
+                        <tr><td>Speeding</td><td>10:22</td><td>2/1/22</td></tr>
+                    </table>
+                 </div>
+                <div class="vioBtns">
+                <button class="grayBtn"><i class="bi bi-play-fill"></i></button>
+                <button class="grayBtn"> <img src="images/carIcn.png" class="grayBtnImg"></button>
+                <button class="grayBtn"><img src="images/ticketIcn.png" class="grayBtnImg"></button>
+                </div>
+            </article>
+            <article class="vio">
+                <img  src="images/signGr.png" class ="signIcn">
+                <div class ="vioDet">
+                    <table class="vioDetTbl">
+                        <tr><td>Illegal bypassing</td><td>09:50</td><td>2/1/22</td></tr>
+                    </table>
+                 </div>
+                <div class="vioBtns">
+                <button class="grayBtn"><i class="bi bi-play-fill"></i></button>
+                <button class="grayBtn"> <img src="images/carIcn.png" class="grayBtnImg"></button>
+                <button class="grayBtn"><img src="images/ticketIcn.png" class="grayBtnImg"></button>
+                </div>
+            </article>
+            <article class="vio">
+                <img  src="images/signRed.png" class ="signIcn">
+                <div class ="vioDet">
+                    <table class="vioDetTbl">
+                        <tr><td>Passing Red Light</td><td>09:23</td><td>2/1/22</td></tr>
+                    </table>
+                 </div>
+                <div class="vioBtns">
+                <button class="grayBtn"><i class="bi bi-play-fill"></i></button>
+                <button class="grayBtn"> <img src="images/carIcn.png" class="grayBtnImg"></button>
+                <button class="grayBtn"><img src="images/ticketIcn.png" class="grayBtnImg"></button>
+                </div>
+            </article>
+
+        </section>
+
+
+
+
+
+
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
