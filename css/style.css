@@ -229,8 +229,11 @@ ul.breadcrumbs {
   }
 
  #editObj{
+     display: flex;
+     flex-direction: column;
     margin: auto 5% ;
     margin-top: 1%;
+    height: 100%;
  }
 
  #editObjBdy{
@@ -267,15 +270,33 @@ ul.breadcrumbs {
 }
 
 .form-range{
-
-    width: 10%;
+    width: 40%;
     margin-left: 2%;
     margin-right:2%;
 }
 .form-label{
     font-weight: bold;
 }
+.editForm{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:100%;
+}
 
+.scroll{
+    width:40%;
+    height: 60px;
+    margin-top: 4%;
+}
+
+.bg-dark{
+    position: relative;
+    float: right;
+    height: 50%;
+    width:18%;
+
+}
 
 /*----------------Drone List Page-----------------------*/
 
@@ -305,5 +326,11 @@ ul.breadcrumbs {
 
 .droneObject {
     width: 100%;
+}
+.bi-geo-alt-fill{
+    margin-right: 5px;
+}
+.bi-play-fill{
+    margin-right: 5px;
 }
  
