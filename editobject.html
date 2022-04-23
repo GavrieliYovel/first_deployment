@@ -10,15 +10,29 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+
 
     <title>Flycop</title>
   </head>
   <body id="editObjBdy">
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
-          ><img src="images/logo.png" alt=""
+          ><img id="logo" src="images/logo.png" alt=""
         /></a>
+        <div id="person">
+          <img id="personImg" src="images/haim.png" alt="">
+          <div class="text-white">
+              <h5>Haim</h5>
+              <p>traffic police officer</p>  
+              <div class="d-flex">
+                  <a href="#"><i class="bi bi-person-circle"></i></a>
+                  <a href="#"><i class="bi bi-gear-fill"></i></a>
+                  <a href="#"><i class="bi bi-door-closed-fill"></i></a>
+              </div>
+          </div>
+      </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -46,13 +60,13 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link text-black" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">List of Drones</a>
+                <a class="nav-link text-black" href="dronelist.html">List of Drones</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Main Object</a>
+                <a class="nav-link active text-black" href="#">Main Object</a>
               </li>
             </ul>
           </div>
@@ -66,63 +80,74 @@
           <tr>
             <th class="th1">Set by:</th>
             <td>Haim</td>
-            <th scope="row">Star Time:</th>
+            <th scope="row">Start Time:</th>
             <td>9:30</td>
           </tr>
         </table>
         <form class="editForm">
-            <div class="d-flex">
-                <p class="pForm">Mission:</p>
-                    <input class="form-check-input align-self-center" type="radio" name="inlineRadioOptions"  value="patrol" checked>
-                    <label class="form-check-label" for="inlineRadio1">Patrol</label>
+          <div class="form-group">
+              <p class="pForm">Mission:</p>
+              <input class="form-check-input align-self-center" type="radio" name="mission" value="patrol" checked id="patrol">
+              <label class="form-check-label" for="inlineRadio1">Patrol</label>
       
-                    <input class="form-check-input align-self-center" type="radio" name="inlineRadioOptions"  value="standStill">
-                    <label class="form-check-label" for="inlineRadio2">Stand still</label>
-              </div>
+              <input class="form-check-input align-self-center" type="radio" name="mission" value="standstill" id="standStill">
+              <label class="form-check-label" for="inlineRadio2">Stand still</label>
+          </div>
           
-        <div class="d-flex flex-column align-content-between">
-          <div class="scroll d-flex justify-content-between ">
-            <label class="form-label d-flex">Duration: </label>
-            <p class="align-self-end"> 20 mins</p>
-            <input type="range" class="form-range align-self-end"  min="20" max="300" value="125" step="5" oninput="func(0, this.value);">
-            <p class="align-self-end"> 300 mins</p>
-            <div class="badge bg-dark d-flex justify-content-center">
-              <output>125</output> <p>mins</p>
-            </div>
+        
+          <div class="form-group">
+            <div class="d-flex">
+              <label class="form-label">Duration: </label>
+              <div class="badge bg-dark d-flex justify-content-center">
+                <output>125</output> <span>mins</span>
+              </div>
+            </div>    
+            <div class="d-flex align-items-center">
+              <p>20 mins </p><input type="range" class="form-range"  min="20" max="300" value="125" step="5" oninput="func(0, this.value);"><p> 300 mins</p>
+            </div>  
           </div>
 
-          <div class="scroll d-flex justify-content-between ">
-            <label  class="form-label d-flex">Avg. Altitude: </label>
-            <p class="align-self-end"> 3 m</p>
-            <input type="range" class="form-range align-self-end"  min="3" max="10" value="5.2" step="0.2" oninput="func(1, this.value);">
-            <p class="align-self-end"> 10 m</p>
-            <div class="badge bg-dark d-flex justify-content-center">
-              <output>5.2</output> <p>m</p>
-            </div>
+          <div class="form-group">
+            <div class="d-flex">
+              <label  class="form-label">Avg. Altitude: </label>
+              <div class="badge bg-dark d-flex justify-content-center">
+                <output>5.2</output> <span>m</span>
+              </div>
+            </div>   
+            <div class="d-flex align-items-center">
+              <p>3 m </p><input type="range" class="form-range align-self-end"  min="3" max="10" value="5.2" step="0.2" oninput="func(1, this.value);"><p> 10 m</p>
+            </div> 
           </div>
-          <div class="scroll d-flex justify-content-between ">
-            <label  class="form-label d-flex">Max distance: </label>
-            <p class="align-self-end"> 25 m</p>
-            <input type="range" class="form-range align-self-end"  min="25" max="2500" value="500" step="1" oninput="func(2, this.value);">
-            <p class="align-self-end"> 2500 m</p>
-            <div class="badge bg-dark d-flex justify-content-center">
-              <output>500</output> <p>m</p>
+
+          <div class="form-group">
+            <div class="d-flex">
+              <label  class="form-label">Max distance: </label>
+              <div class="badge bg-dark d-flex justify-content-center">
+                <output>500</output> <span>m</span>
+              </div>
             </div>
-          </div>
- 
-        </div>
+            <div class="d-flex align-items-center">
+              <p>25 m </p><input type="range" class="form-range align-self-end"  min="25" max="2500" value="500" step="1" oninput="func(2, this.value);"  id="maxDistance"><p> 2500 m</p>
+            </div>    
+          </div> 
         
-        </form>
-     
+          <div class="buttonGroup d-flex justify-content-end">
+            <a class="btn btn-danger btn-md" href="#" role="button"><img src="images/stopIcn.png" alt=""> End Mission</a>
+            <a class="text-white btn btn-warning btn-md" href="#" role="button"><i class="bi bi-x-circle"></i> Abort</a>
+            <button type="submit" value="Submit" class="btn btn-success btn-md"><i class="bi bi-check-lg"></i>Submit</button>
+          </div>
+      </form>
+      </div>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="scripts/scripts.js"></script>
-
-
     
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="scripts/scripts.js"></script>
   </body>
 </html>

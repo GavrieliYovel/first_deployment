@@ -274,6 +274,7 @@ ul.breadcrumbs {
     margin-left: 2%;
     margin-right:2%;
 }
+
 .form-label{
     font-weight: bold;
 }
@@ -284,18 +285,28 @@ ul.breadcrumbs {
     height:100%;
 }
 
-.scroll{
-    width:40%;
-    height: 60px;
-    margin-top: 4%;
+.bg-dark{
+    height: 50%;
+    width:7%;
+    margin-left: 20px;
 }
 
-.bg-dark{
-    position: relative;
-    float: right;
-    height: 50%;
-    width:18%;
+.form-group {
+    margin:25px 0px;
+}
+.form-group label {
+    width: 10%;
+}
+.form-group p {
+    width: 5%;
+}
 
+.buttonGroup {
+    margin-top: 50px;
+}
+
+.buttonGroup a {
+    margin-right: 25px;
 }
 
 /*----------------Drone List Page-----------------------*/
@@ -332,5 +343,10 @@ ul.breadcrumbs {
 }
 .bi-play-fill{
     margin-right: 5px;
+}
+
+.btn-danger img {
+    width: 20px;
+    height: 20px;
 }
  
