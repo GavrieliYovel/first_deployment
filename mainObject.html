@@ -103,8 +103,11 @@
       
 <!-- Mission Settings -->
         <section id="missSet">
-            <a href="editobject.html" class = "grayBtn"><i class="bi bi-pencil-fill"></i></a>
-             <h2>Mission Settings</h2>
+            <div class="d-flex justify-content-end">
+              <a href="editobject.html" class = "grayBtn"><i class="bi bi-pencil-fill"></i></a>
+            </div>
+           
+            <h2>Mission Settings</h2>
            
             <table id="missonSetTbl">
                 <tr>
@@ -122,52 +125,82 @@
                     <td> 500 m</td>
                 </tr>
             </table> 
-            <button id="stpMisBtn"> <img src="images/stopIcn.png"> Stop Misision</button>
+            <div class="d-flex justify-content-center">
+              <button class="btn btn-danger btn-sm"> <img src="images/stopIcn.png"> Stop Misision</button>
+            </div>
+            
         </section>
             <!-- Violations Detected -->
         <section id="vioDet">
             <h2>Violations Detected:</h2>
-            <article class="vio">
-                <img  src="images/signYel.png" class ="signIcn">
-                <div class ="vioDet">
 
-                    <table class="vioDetTbl">
-                        <tr><td>Speeding</td><td>10:22</td><td>2/1/22</td></tr>
-                    </table>
-                 </div>
-                <div class="vioBtns">
-                <button class="grayBtn"><i class="bi bi-play-fill"></i></button>
-                <button class="grayBtn"> <img src="images/carIcn.png" class="grayBtnImg"></button>
-                <button class="grayBtn"><img src="images/ticketIcn.png" class="grayBtnImg"></button>
+            <table class="d-flex flex-column">
+              <tr class="border-bottom border-dark d-flex justify-content-between align-items-end">
+                <td>
+                  <img  src="images/signYel.png" class ="signIcn">
+                </td>
+                <td>
+                  Speeding
+                </td>
+                <td>
+                  10:22
+                </td>
+                <td>
+                  2/1/22
+                </td>
+                <td>
+                  <div>
+                    <button class="grayBtn"><i class="bi bi-play-fill"></i></button>
+                    <button class="grayBtn"> <img src="images/carIcn.png" class="grayBtnImg"></button>
+                    <button class="grayBtn"><img src="images/ticketIcn.png" class="grayBtnImg"></button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-bottom border-dark d-flex justify-content-between align-items-end">
+                <div>
+                  <td>
+                    <img  src="images/signRed.png" class ="signIcn">
+                  </td>
+                  <td >
+                    Passing Red Light
+                  </td>
+                  <td>
+                    09:23
+                  </td>
+                  <td>
+                    2/1/22
+                  </td>
                 </div>
-            </article>
-            <article class="vio">
-                <img  src="images/signGr.png" class ="signIcn">
-                <div class ="vioDet">
-                    <table class="vioDetTbl">
-                        <tr><td>Illegal bypassing</td><td>09:50</td><td>2/1/22</td></tr>
-                    </table>
-                 </div>
-                <div class="vioBtns">
-                <button class="grayBtn"><i class="bi bi-play-fill"></i></button>
-                <button class="grayBtn"> <img src="images/carIcn.png" class="grayBtnImg"></button>
-                <button class="grayBtn"><img src="images/ticketIcn.png" class="grayBtnImg"></button>
-                </div>
-            </article>
-            <article class="vio">
-                <img  src="images/signRed.png" class ="signIcn">
-                <div class ="vioDet">
-                    <table class="vioDetTbl">
-                        <tr><td>Passing Red Light</td><td>09:23</td><td>2/1/22</td></tr>
-                    </table>
-                 </div>
-                <div class="vioBtns">
-                <button class="grayBtn"><i class="bi bi-play-fill"></i></button>
-                <button class="grayBtn"> <img src="images/carIcn.png" class="grayBtnImg"></button>
-                <button class="grayBtn"><img src="images/ticketIcn.png" class="grayBtnImg"></button>
-                </div>
-            </article>
-
+                <td>
+                  <div>
+                    <button class="grayBtn"><i class="bi bi-play-fill"></i></button>
+                    <button class="grayBtn"> <img src="images/carIcn.png" class="grayBtnImg"></button>
+                    <button class="grayBtn"><img src="images/ticketIcn.png" class="grayBtnImg"></button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-bottom border-dark d-flex justify-content-between align-items-end">
+                <td>
+                  <img  src="images/signGr.png" class ="signIcn">
+                </td>
+                <td>
+                  Illegal bypassing
+                </td>
+                <td>
+                  09:50
+                </td>
+                <td>
+                  2/1/22
+                </td>
+                <td>
+                  <div>
+                    <button class="grayBtn"><i class="bi bi-play-fill"></i></button>
+                    <button class="grayBtn"> <img src="images/carIcn.png" class="grayBtnImg"></button>
+                    <button class="grayBtn"><img src="images/ticketIcn.png" class="grayBtnImg"></button>
+                  </div>
+                </td>
+              </tr>
+            </table>
         </section>
     </div> 
 

@@ -1,7 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-size: clamp(5px, 3vw, 18px)
+    font-size: clamp(5px, 2.5vw, 18px)
 }
 p{
     margin-bottom: 0;
@@ -21,6 +21,7 @@ iframe{
     display: flex;
     justify-content: flex-end;
     width: 75%;
+    align-items: center;
 }
 
 #person i {
@@ -59,7 +60,8 @@ iframe{
 }
 
 .btn { 
-    border-radius: 999px;
+    border-radius: 40px;
+    white-space: nowrap;
 }
 
 .active {
@@ -70,6 +72,7 @@ iframe{
 
 #mainObject {
     background-color: gray;
+    white-space: nowrap;
 }
 
 ul.breadcrumbs {
@@ -109,20 +112,20 @@ ul.breadcrumbs {
       margin-top: 1%;
 
   }
-.mapouter{
-    
+
+.mapouter{ 
     float: right;
 }
   #missionProperties{
-    width: 25%;
+    width:35%;
     margin-top: 3%;
   }
   #missSet{
     background: rgba(255, 255, 255, 0.4);
     border-radius: 10px;
-      margin-top: 5%;
-      width: 50%;
-      padding: 20px;
+    margin-top: 40px;
+    width: 50%;
+    padding: 20px;
   }
 
 
@@ -160,7 +163,6 @@ ul.breadcrumbs {
     padding: 5px 10px 5px 10px;
     color: white;
     font-weight: bold;
-
     border-radius: 10px;
 
 }
@@ -174,7 +176,7 @@ ul.breadcrumbs {
 {
     background: rgba(255, 255, 255, 0.4);
     border-radius: 10px;
-    margin-top: 5%;
+    margin-top: 30px;
     width: 100%;
     padding: 20px;
   }
@@ -199,6 +201,8 @@ ul.breadcrumbs {
       align-items: flex-end;
 
   }
+
+
   .vioBtns{
       position: relative;
       right: -70px;
@@ -207,30 +211,35 @@ ul.breadcrumbs {
       margin: 5px 5px 5px 5px;
   }
 
+  .grayBtn{
+    position: relative;
+    float: right;
+    margin: 8px 8px;
+    background-color: gray;
+    border-radius: 20%;
+    height: 30px;
+    width: 30px;
+}
+
   [class^="bi-"]::before, [class*=" bi-"]::before{
       position: relative;
       bottom: 3px;
       color:white;
   }
   .grayBtnImg{
-      position: relative;
     width:auto;
     height:auto;
     max-width: 25px;
     max-height: 25px;
+    position: relative;
     bottom: 3px;
     left: -1px;
-  }
-  .vioDetTbl{
-      width:100%;
-  }
-  .vioDetTbl tr > td{
-        width:33.33%;
+
   }
 
  #editObj{
-     display: flex;
-     flex-direction: column;
+    display: flex;
+    flex-direction: column;
     margin: auto 5% ;
     margin-top: 1%;
     height: 100%;
@@ -317,7 +326,7 @@ ul.breadcrumbs {
 }
 
 #listWrapper {
-    margin: 75px 0px 0px 75px;
+    margin: 75px auto;
     width: 75%;
 }
 
@@ -327,17 +336,21 @@ ul.breadcrumbs {
 
 .tableStyle {
     width: 100%;
+    white-space: nowrap;
 }
 
 .tableStyle th { 
     width: 20%;
+    
 }
-
-
 
 .droneObject {
     width: 100%;
+    display: flex;
+    align-items: center;
 }
+
+
 .bi-geo-alt-fill{
     margin-right: 5px;
 }
@@ -349,4 +362,150 @@ ul.breadcrumbs {
     width: 20px;
     height: 20px;
 }
- 
+
+.btn-sm {
+    margin-top: 20px;
+}
+
+.btn-secondary {
+    border-radius: 4px;
+}
+
+
+@media only screen and (max-width: 1450px) 
+{
+    
+    /* Navbar */
+    #logo {
+        width: 150px;
+    }
+    #personImg {
+        width: 55px;
+        margin-right: 20px;
+    }
+    #person h5{
+        font-size: 15px;
+    }
+    #person p {
+        font-size: 12px;
+    }
+
+    /* Drone List */
+    .imgStyle {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+
+    
+    /* Navbar */
+    #person {
+        width: 40%;
+        justify-content: center;
+    }
+
+    #listWrapper {
+        margin: 25px auto;
+        width: 75%;
+    }
+
+    #person h5{
+        font-size: 13px;
+    }
+    #person p {
+        font-size: 10px;
+    }
+
+    /* Drone List */
+    .droneObject {
+        flex-wrap: wrap;
+    }
+
+    /* Main Object */
+    #missSet{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #stpMisbtn {
+        width: 100px;
+    }
+
+    #missionProperties{
+        width:50%;
+      }
+    .signIcn{
+        width: 25px;
+        height: 25px;
+    }
+    .grayBtnImg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) 
+{
+    /* Navbar */
+    #logo {
+        width: 100px;
+    }
+    #personImg {
+        width: 40px; 
+    }
+    #person h5{
+        font-size: 10px;
+    }
+    #person p {
+        font-size: 8px;
+    }
+
+    /* Drone List */
+    .imgStyle {
+        width: 75px;
+    }
+    .btn-danger {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .btn-danger img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .vioDet tr {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+    
+
+/*----------------Home Page-----------------------*/
+.grayBack{
+    background-color:rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.quickIcn{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 5px;
+}
+
+h6{
+    margin-bottom: 0;
+}
+.bord{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.252);
+}
+.container{
+    height: 100%;
+}
+
+
