@@ -9,9 +9,28 @@
     <title>Document</title>
 </head>
 <body id="droneList">
-    <nav class="navbar navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img id="logo" src="images/logo.png" alt=""></a>
+            <a class="navbar-brand" href="homepage.html"></a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header ">
+                    <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">New Mission</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Active Drones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Violations</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div id="person">
                 <img id="personImg" src="images/haim.png" alt="">
                 <div class="text-white">
@@ -27,108 +46,98 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link text-black" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black active" href="#">List of Drones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black" href="mainobject.html">Main Object</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+
         </div>
       </nav>
     <ul class="breadcrumbs">
         <li><i class="bi bi-caret-right"></i></i><a href="index.html">Home Screen</a></li>
         <li><i class="bi bi-caret-right"></i></i><a href="#">Active Drones</a></li>
     </ul>
-
     <div id="listWrapper">   
-        <h1>Active Drones</h1>
-        <article class="droneObject">
-            <img class="imgStyle" src="images/drone.png" alt="">
-            <div class="col-9">
-                <h4>Drone #235</h4>
-                <table class="tableStyle"> 
-                    <tr>
-                        <th>Mission: </th>
-                        <td>Patrol</td>
-                        <th>Violation Detected: </th>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <th>Set by: </th>
-                        <td>Haim</td>
-                        <th>Time: </th>
-                        <td>9:30 - 12:20</td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <a class="btn btn-dark btn-sm" href="#" role="button"> <i class="bi bi-geo-alt-fill"></i>Map View</a>
-                <a class="btn btn-dark btn-sm" href="#" role="button"><i class="bi bi-play-fill"></i>Live Video</a>
-            </div>
-        </article>
+        <div class="d-flex justify-content-between">
+            <h1>Active Drones</h1>
+            <a href="#" class = "grayBtn border border-white"><i class="bi bi-pencil-fill"></i></a>
+        </div>
+        <div class="droneObject">
+            <a class="droneObject" href="mainobject.html">
+                <img class="imgStyle" src="images/drone.png" alt="">
+                <div class="col-9">
+                    <h4>Drone #235</h4>
+                    <table class="tableStyle"> 
+                        <tr>
+                            <th>Mission: </th>
+                            <td>Patrol</td>
+                            <th>Violation Detected: </th>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <th>Set by: </th>
+                            <td>Haim</td>
+                            <th>Time: </th>
+                            <td>9:30 - 12:20</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <a class="btn btn-dark btn-sm" href="#" role="button"> <i class="bi bi-geo-alt-fill"></i>Map View</a>
+                    <a class="btn btn-dark btn-sm" href="#" role="button"><i class="bi bi-play-fill"></i>Live Video</a>
+                </div>
+            </a>
+        </div>
         <hr class="my-4">
-        <article class="droneObject">
-            <img class="imgStyle" src="images/drone.png" alt="">
-            <div class="col-9">
-                <h4>Drone #236</h4>
-                <table class="tableStyle"> 
-                    <tr>
-                        <th>Mission: </th>
-                        <td>Patrol</td>
-                        <th>Violation Detected: </th>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <th>Set by: </th>
-                        <td>Haim</td>
-                        <th>Time: </th>
-                        <td>9:30 - 12:20</td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <a class="btn btn-dark btn-sm" href="#" role="button"><i class="bi bi-geo-alt-fill"></i>Map View</a>
-                <a class="btn btn-dark btn-sm" href="#" role="button"><i class="bi bi-play-fill"></i>Live Video</a>
-            </div>
-        </article>
+        <div class="droneObject">
+            <a class="droneObject" href="mainobject.html">
+                <img class="imgStyle" src="images/drone.png" alt="">
+                <div class="col-9">
+                    <h4>Drone #235</h4>
+                    <table class="tableStyle"> 
+                        <tr>
+                            <th>Mission: </th>
+                            <td>Patrol</td>
+                            <th>Violation Detected: </th>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <th>Set by: </th>
+                            <td>Haim</td>
+                            <th>Time: </th>
+                            <td>9:30 - 12:20</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <a class="btn btn-dark btn-sm" href="#" role="button"> <i class="bi bi-geo-alt-fill"></i>Map View</a>
+                    <a class="btn btn-dark btn-sm" href="#" role="button"><i class="bi bi-play-fill"></i>Live Video</a>
+                </div>
+            </a>
+        </div>
         <hr class="my-4">
-        <article class="droneObject">
-            <img class="imgStyle" src="images/drone.png" alt="">
-            <div class="col-9">
-                <h4>Drone #237</h4>
-                <table class="tableStyle"> 
-                    <tr>
-                        <th>Mission: </th>
-                        <td>Patrol</td>
-                        <th>Violation Detected: </th>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <th>Set by: </th>
-                        <td>Haim</td>
-                        <th>Time: </th>
-                        <td>9:30 - 12:20</td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <a class="btn btn-dark btn-sm" href="#" role="button"><i class="bi bi-geo-alt-fill"></i>Map View</a>
-                <a class="btn btn-dark btn-sm" href="#" role="button"><i class="bi bi-play-fill"></i>Live Video</a>
-            </div>
-        </article>
+        <div class="droneObject">
+            <a class="droneObject" href="mainobject.html">
+                <img class="imgStyle" src="images/drone.png" alt="">
+                <div class="col-9">
+                    <h4>Drone #235</h4>
+                    <table class="tableStyle"> 
+                        <tr>
+                            <th>Mission: </th>
+                            <td>Patrol</td>
+                            <th>Violation Detected: </th>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <th>Set by: </th>
+                            <td>Haim</td>
+                            <th>Time: </th>
+                            <td>9:30 - 12:20</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <a class="btn btn-dark btn-sm" href="#" role="button"> <i class="bi bi-geo-alt-fill"></i>Map View</a>
+                    <a class="btn btn-dark btn-sm" href="#" role="button"><i class="bi bi-play-fill"></i>Live Video</a>
+                </div>
+            </a>
+        </div>
         <hr class="my-4">
     </div>
 

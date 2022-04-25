@@ -1,7 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-size: clamp(5px, 2.5vw, 18px)
+    font-size: clamp(5px, 3vw, 18px)
 }
 p{
     margin-bottom: 0;
@@ -20,8 +20,8 @@ iframe{
 #person {
     display: flex;
     justify-content: flex-end;
-    width: 75%;
     align-items: center;
+    margin-right: 25px;
 }
 
 #person i {
@@ -36,6 +36,18 @@ iframe{
     filter: brightness(0) invert(1);
 }
 
+.navbar-brand {
+    background-image: url(/images/logo.png);
+    width: 175px;
+    height: 77px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(0) invert(1);
+
+}
+.offcanvas-start {
+    background-color: #212529;
+}
 /*----------------Welcome Page-----------------------*/
 
 #welcomePage {
@@ -45,10 +57,10 @@ iframe{
 
 .container-fluid {
     background-color: #212529;
-    
 }
 .navbar { 
     padding: 0px;
+    white-space: nowrap;
 }
 
 .container {
@@ -212,11 +224,12 @@ ul.breadcrumbs {
   }
 
   .grayBtn{
-    position: relative;
-    float: right;
-    margin: 8px 8px;
+    position: flex;
+    justify-content: center;
+    align-items: center;
     background-color: gray;
     border-radius: 20%;
+    margin-left: 9px;
     height: 30px;
     width: 30px;
 }
@@ -226,6 +239,7 @@ ul.breadcrumbs {
       bottom: 3px;
       color:white;
   }
+
   .grayBtnImg{
     width:auto;
     height:auto;
@@ -234,7 +248,6 @@ ul.breadcrumbs {
     position: relative;
     bottom: 3px;
     left: -1px;
-
   }
 
  #editObj{
@@ -345,9 +358,15 @@ ul.breadcrumbs {
 }
 
 .droneObject {
+    text-decoration: none;
+    color: #000000;
     width: 100%;
     display: flex;
     align-items: center;
+}
+
+.droneObject:hover {
+    color: #34393ed3;
 }
 
 
@@ -376,12 +395,13 @@ ul.breadcrumbs {
 {
     
     /* Navbar */
-    #logo {
+    .navbar-brand {
         width: 150px;
+        height: 66px;
     }
     #personImg {
-        width: 55px;
-        margin-right: 20px;
+        width: 75px;
+        height: 50px;
     }
     #person h5{
         font-size: 15px;
@@ -396,12 +416,12 @@ ul.breadcrumbs {
     }
 }
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:1040px) {
 
     
     /* Navbar */
     #person {
-        width: 40%;
+        width: 35%;
         justify-content: center;
     }
 
@@ -420,6 +440,7 @@ ul.breadcrumbs {
     /* Drone List */
     .droneObject {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     /* Main Object */
@@ -450,17 +471,13 @@ ul.breadcrumbs {
 @media only screen and (max-width: 500px) 
 {
     /* Navbar */
-    #logo {
+    .navbar-brand {
         width: 100px;
+        height: 44px;
     }
     #personImg {
-        width: 40px; 
-    }
-    #person h5{
-        font-size: 10px;
-    }
-    #person p {
-        font-size: 8px;
+        width: 50px; 
+        height: 33px;
     }
 
     /* Drone List */
@@ -480,6 +497,11 @@ ul.breadcrumbs {
         display: flex;
         flex-wrap: wrap;
     }
+    .grayBtn {
+        width: 25px;
+        height: 25px;
+    }
+    
 }
 
     
@@ -507,5 +529,6 @@ h6{
 .container{
     height: 100%;
 }
+
 
 
