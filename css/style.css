@@ -23,13 +23,17 @@ body {
     align-items: center;
     margin-right: 25px;
 }
+#person p {
+    margin: 0px;
+}
 
 #person i {
     margin-right: 10px;
 }
 
 #person h5 {
-    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .navbar-brand {
@@ -341,16 +345,7 @@ h6{
         width: 150px;
         height: 66px;
     }
-    #personImg {
-        width: 75px;
-        height: 50px;
-    }
-    #person h5{
-        font-size: 15px;
-    }
-    #person p {
-        font-size: 12px;
-    }
+
 
     /* Drone List */
     .imgStyle {
@@ -371,12 +366,6 @@ h6{
         width: 75%;
     }
 
-    #person h5{
-        font-size: 13px;
-    }
-    #person p {
-        font-size: 10px;
-    }
 
     /* Drone List */
     .droneObject {
@@ -424,11 +413,11 @@ h6{
         width: 100px;
         height: 44px;
     }
-    #personImg {
-        width: 50px; 
-        height: 33px;
-    }
 
+    #personImg {
+        width: 75px;
+        height: 50px;
+    }
     /* Drone List */
     .imgStyle {
         width: 75px;
