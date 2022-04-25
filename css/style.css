@@ -3,12 +3,12 @@
     margin: 0px;
     font-size: clamp(5px, 3vw, 18px)
 }
-p{
-    margin-bottom: 0;
+body {
+    background-color:#bdb9b9;
+    white-space: nowrap;
+    font-family: 'Ubuntu', sans-serif;
 }
-iframe{
-    display: block;
-}
+/*----------------Navbar-----------------------*/
 
 #personImg {
     clip-path: circle();
@@ -32,12 +32,8 @@ iframe{
     margin: 0px;
 }
 
-#logo {
-    filter: brightness(0) invert(1);
-}
-
 .navbar-brand {
-    background-image: url(/images/logo.png);
+    background-image: url("/students/2021-2022/web1/dev_209/images/logo.png");
     width: 175px;
     height: 77px;
     background-size: cover;
@@ -48,23 +44,38 @@ iframe{
 .offcanvas-start {
     background-color: #212529;
 }
-/*----------------Welcome Page-----------------------*/
-
-#welcomePage {
-    background-color: gray;
-}
-
 
 .container-fluid {
     background-color: #212529;
 }
+
 .navbar { 
     padding: 0px;
     white-space: nowrap;
 }
 
-.container {
-    height: 85vh;
+
+/*----------------General-----------------------*/
+.grayBtn{
+    position: relative;
+    float: right;
+    background-color: gray;
+    border-radius: 20%;
+    height: 30px;
+    width: 30px;
+    border: none;
+    margin-left: 9px;
+    border: none;
+}
+
+.grayBtn img{
+    width:auto;
+    height:auto;
+    max-width: 25px;
+    max-height: 25px;
+    position: relative;
+    bottom: 3px;
+    left: -1px;
 }
 
 .btn-lg {
@@ -80,59 +91,53 @@ iframe{
     font-weight: bold;
 }
 
-/*----------------Main Object Page-----------------------*/
-
-#mainObject {
-    background-color: gray;
-    white-space: nowrap;
-}
-
 ul.breadcrumbs {
     padding: 10px 16px;
     list-style: none;
   }
   
 
-  ul.breadcrumbs li {
+ul.breadcrumbs li {
     display: inline;
-    font-size: 18px;
   }
-  ul.breadcrumbs li a {
+
+ul.breadcrumbs li a {
     text-decoration: none;
     color: black;
-
- 
-  }
+}
 
 
-  ul.breadcrumbs li a:hover {
-    text-decoration: none;
+ul.breadcrumbs li a:hover {
     color: black;
     font-weight: bold;
   }
-  .bi-caret-right::before{
-      vertical-align: text-bottom;
-      position: relative;
-      bottom: 2px ;
-      padding-right: 5px;
-      opacity: 50%;
 
-  }
+  .btn-sm {
+    margin-top: 20px;
+}
 
-  #mainObjContent{
+.btn-secondary {
+    border-radius: 4px;
+}
+
+/*----------------Main Object Page---------------*/
+
+.startLine {
+    width: 30%;
+}
+
+#mainObjContent{
       margin: auto 5% ;
       margin-top: 1%;
 
-  }
-
-.mapouter{ 
-    float: right;
 }
-  #missionProperties{
+
+#missionProperties{
     width:35%;
     margin-top: 3%;
   }
-  #missSet{
+
+#missSet{
     background: rgba(255, 255, 255, 0.4);
     border-radius: 10px;
     margin-top: 40px;
@@ -141,8 +146,8 @@ ul.breadcrumbs {
   }
 
 
-  .bi-pencil-fill::before {
-      position: relative;
+.bi-pencil-fill::before {
+    position: relative;
     color: white;
     left:5px;
     top:-2px;
@@ -151,60 +156,23 @@ ul.breadcrumbs {
 #missonSetTbl{
     width: 100%;
 }
-.grayBtn{
-    position: relative;
-    float: right;
-    background-color: gray;
-    border-radius: 20%;
-    height: 30px;
-    width: 30px;
-}
-.pan-tool-icon-1 {
-	width: 83px;
-	height: 83px;
-	background: #000000;
-}
 
-#stpMisBtn{
-    position: relative;
-    float: right;
-    bottom: 30px;
-    right: 30px;
-    background-color: rgb(160, 18, 18);
-    border: none;
-    padding: 5px 10px 5px 10px;
-    color: white;
-    font-weight: bold;
-    border-radius: 10px;
-
-}
-#stpMisBtn img{
-    margin-right: 10px;
-    position: relative;
-    bottom: 3px;
-}
-
-#vioDet
-{
+#vioDet{
     background: rgba(255, 255, 255, 0.4);
     border-radius: 10px;
     margin-top: 30px;
     width: 100%;
     padding: 20px;
-  }
+}
+
 .signIcn{
     width:auto;
     height:auto;
     max-width: 35px;
     max-height: 35px;
 }
-  .vio{
-      display: flex;
-      border-bottom: 1px solid rgb(91, 91, 91) ;
-      align-items: flex-end;
-    
-  }
-  .vioDet{
+
+.vioDet{
       position: relative;
       display: flex;
       justify-content: space-between;
@@ -212,78 +180,38 @@ ul.breadcrumbs {
       margin-left: 20px;
       align-items: flex-end;
 
-  }
-
-
-  .vioBtns{
-      position: relative;
-      right: -70px;
-  }
-  .vioBtns button{
-      margin: 5px 5px 5px 5px;
-  }
-
-  .grayBtn{
-    position: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: gray;
-    border-radius: 20%;
-    margin-left: 9px;
-    height: 30px;
-    width: 30px;
 }
 
-  [class^="bi-"]::before, [class*=" bi-"]::before{
+[class^="bi-"]::before, [class*=" bi-"]::before{
       position: relative;
       bottom: 3px;
       color:white;
-  }
+}
 
-  .grayBtnImg{
-    width:auto;
-    height:auto;
-    max-width: 25px;
-    max-height: 25px;
-    position: relative;
-    bottom: 3px;
-    left: -1px;
-  }
+/*----------------Edit Object Page---------------*/
 
- #editObj{
+#editObj{
+    width: 65%;
     display: flex;
     flex-direction: column;
-    margin: auto 5% ;
-    margin-top: 1%;
+    margin: 50px;
     height: 100%;
+    white-space: nowrap;
  }
 
- #editObjBdy{
-     background-color: gray;
- }
- .editObjTbl{
+
+ #editObj table{
     width: 30%; 
-    margin-top: 3%;
+    margin: 15px 0px 15px 0px;
  }
- .editObjTbl .th1{
+ #editObj th{
      width:15%;
  }
- .editObjTbl  th{
-    width: 20%;
-  }
-  .pForm{
-      font-weight: bold;
-      margin-top: 2%;
-      margin-right: 2%;
-  }
-  .form-check-label{
-    margin-top: 2%;
-    margin-right: 2%;
-  }
-  .form-check-input{
+ 
+.form-check-input{
     margin-top: 2%;
     margin-right: 1%;
-  }
+}
   
 
 .form-check-input:checked {
@@ -292,14 +220,11 @@ ul.breadcrumbs {
 }
 
 .form-range{
-    width: 40%;
+    width: 80%;
     margin-left: 2%;
     margin-right:2%;
 }
 
-.form-label{
-    font-weight: bold;
-}
 .editForm{
     display: flex;
     flex-direction: column;
@@ -309,7 +234,6 @@ ul.breadcrumbs {
 
 .bg-dark{
     height: 50%;
-    width:7%;
     margin-left: 20px;
 }
 
@@ -317,10 +241,13 @@ ul.breadcrumbs {
     margin:25px 0px;
 }
 .form-group label {
-    width: 10%;
+    width: 22%;
+    margin-top: 2%;
+    margin-right: 15px;
+    font-weight: bold;
 }
 .form-group p {
-    width: 5%;
+    width: 15%;
 }
 
 .buttonGroup {
@@ -332,11 +259,6 @@ ul.breadcrumbs {
 }
 
 /*----------------Drone List Page-----------------------*/
-
-
-#droneList {
-    background-color:gray;
-}
 
 #listWrapper {
     margin: 75px auto;
@@ -369,26 +291,46 @@ ul.breadcrumbs {
     color: #34393ed3;
 }
 
-
-.bi-geo-alt-fill{
-    margin-right: 5px;
-}
-.bi-play-fill{
-    margin-right: 5px;
-}
-
 .btn-danger img {
     width: 20px;
     height: 20px;
 }
 
-.btn-sm {
-    margin-top: 20px;
+
+/*----------------Home Page-----------------------*/
+.grayBack{
+    background-color:rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
-.btn-secondary {
-    border-radius: 4px;
+.quickActions {
+    width: 50%;
 }
+
+.recentViolations {
+    width: 75%;
+}
+
+.quickIcn{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 5px;
+}
+
+h6{
+    margin-bottom: 0;
+}
+.bord{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.252);
+}
+.container{
+    height: 100%;
+}
+
+
+/* Media Responsive */
 
 
 @media only screen and (max-width: 1450px) 
@@ -418,7 +360,6 @@ ul.breadcrumbs {
 
 @media only screen and (max-width:1040px) {
 
-    
     /* Navbar */
     #person {
         width: 35%;
@@ -451,10 +392,6 @@ ul.breadcrumbs {
         width: 100%;
     }
 
-    #stpMisbtn {
-        width: 100px;
-    }
-
     #missionProperties{
         width:50%;
       }
@@ -462,10 +399,22 @@ ul.breadcrumbs {
         width: 25px;
         height: 25px;
     }
-    .grayBtnImg {
+    .grayBtn img {
         width: 20px;
         height: 20px;
     }
+
+    /* Home Page */
+
+    .quickActions {
+        width: 100%;
+    }
+    
+    .recentViolations {
+        width: 100%;
+    }
+    
+
 }
 
 @media only screen and (max-width: 500px) 
@@ -484,10 +433,7 @@ ul.breadcrumbs {
     .imgStyle {
         width: 75px;
     }
-    .btn-danger {
-        font-size: 15px;
-        margin-top: 20px;
-    }
+
     .btn-danger img {
         width: 15px;
         height: 15px;
@@ -501,34 +447,11 @@ ul.breadcrumbs {
         width: 25px;
         height: 25px;
     }
-    
+  
 }
 
     
 
-/*----------------Home Page-----------------------*/
-.grayBack{
-    background-color:rgba(255, 255, 255, 0.4);
-    padding: 20px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-
-.quickIcn{
-    height: 80px;
-    width: 80px;
-    margin-bottom: 5px;
-}
-
-h6{
-    margin-bottom: 0;
-}
-.bord{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.252);
-}
-.container{
-    height: 100%;
-}
 
 
 
